@@ -41,7 +41,7 @@ const SideMenu = () => {
 
       {/* Menu Slider */}
       <nav
-        className={`fixed top-0 right-0 h-full w-[min(100%,450px)] bg-gray-600 transform ${
+        className={`fixed top-0 right-0 h-full w-[min(100%,450px)] bg-black opacity-90 transform ${
           isMenuOpen ? "translate-x-0" : "translate-x-[min(100%,450px)]"
         } transition-transform duration-300 ease-in-out z-20 overflow-hidden`}
       >
@@ -51,7 +51,7 @@ const SideMenu = () => {
             <a
               key={item.text}
               href={item.href}
-              className="w-full text-gray-950 text-center font-bold duration-300 p-5 text-5xl hover:scale-125 hover:text-white"
+              className="w-full text-white text-center font-bold duration-300 p-5 text-5xl hover:scale-125 hover:text-gray-500"
               onClick={toggleSidebar}
             >
               {item.text}
