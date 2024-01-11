@@ -1,6 +1,7 @@
-const Logo = () => {
+const Logo = ({ className = "" }) => {
   return (
     <svg
+      className={`w-full h-full ${className}`}
       version="1.1"
       x="0px"
       y="0px"
