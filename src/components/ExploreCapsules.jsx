@@ -137,7 +137,7 @@ const ExploreCapsules = () => {
                     item={item}
                     title={item?.capsule_serial}
                     description={item?.details}
-                    image="/public/images/starlink-transparent.png"
+                    image="/images/starlink-transparent.png"
                     tag={item?.type}
                     popupContent={<CapsuleDetails item={item} />}
                   />
