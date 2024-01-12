@@ -6,6 +6,7 @@ import { CapsuleDetails } from "./";
 
 const initialFilters = {
   limit: 4,
+  status: "",
   order: "asc",
   sort: "capsule_serial",
   offset: 0,
@@ -59,6 +60,24 @@ const ExploreCapsules = () => {
                     <option value="4">4</option>
                     <option value="8">8</option>
                     <option value="12">12</option>
+                  </select>
+                </label>
+              </div>
+
+              <div className="relative overflow-hidden w-[min(100%,500px)]">
+                <label htmlFor="status">
+                  Status
+                  <select
+                    id="status"
+                    name="status"
+                    value={filters?.status}
+                    className="w-full px-6 py-4 text-white text-lg bg-gray-700 outline-none z-10 rounded-md"
+                    onChange={onChange}
+                  >
+                    <option value="">Select Status</option>
+                    <option value="active">Active</option>
+                    <option value="retired">Retired</option>
+                    <option value="unknown">Unknown</option>
                   </select>
                 </label>
               </div>
