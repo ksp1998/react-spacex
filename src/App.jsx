@@ -1,4 +1,10 @@
-import { Header, HeroBanner, Wrapper } from "./components";
+import {
+  ExploreCapsules,
+  ExploreRockets,
+  Header,
+  HeroBanner,
+  Wrapper,
+} from "./components";
 
 const App = () => {
   return (
@@ -8,6 +14,8 @@ const App = () => {
         <Wrapper>
           <HeroBanner />
         </Wrapper>
+        <ExploreRockets />
+        <ExploreCapsules />
       </main>
     </>
   );
