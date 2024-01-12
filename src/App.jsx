@@ -1,6 +1,7 @@
 import {
   ExploreCapsules,
   ExploreRockets,
+  Footer,
   Header,
   HeroBanner,
   Wrapper,
@@ -16,6 +17,7 @@ const App = () => {
         </Wrapper>
         <ExploreRockets />
         <ExploreCapsules />
+        <Footer />
       </main>
     </>
   );
